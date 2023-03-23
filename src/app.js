@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+require("../src/db/conn.js");
 const port = process.env.PORT || 3000;
 
 app.get("/", async (req, res) => {
