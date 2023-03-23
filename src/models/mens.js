@@ -30,3 +30,9 @@ const menSchema = new mongoose.Schema({
     default: "100m",
   },
 });
+
+// we are creating a new collection
+
+const MensRanking = new mongoose.model("MenRanking", menSchema);
+
+module.exports = MensRanking;
